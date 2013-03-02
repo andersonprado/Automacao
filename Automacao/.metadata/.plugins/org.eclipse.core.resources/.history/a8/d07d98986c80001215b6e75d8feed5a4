@@ -1,0 +1,19 @@
+package br.com.managedBean;
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+
+@ManagedBean
+@RequestScoped
+public class Teste {
+
+	public String ativar() {
+
+	}
+
+	public String desativar() {
+
+	}
+
+}

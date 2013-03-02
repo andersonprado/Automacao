@@ -1,0 +1,16 @@
+/**
+ * TesteService.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package br.com.arduino;
+
+public interface TesteService extends javax.xml.rpc.Service {
+    public java.lang.String getTestePortAddress();
+
+    public br.com.arduino.Teste getTestePort() throws javax.xml.rpc.ServiceException;
+
+    public br.com.arduino.Teste getTestePort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException;
+}

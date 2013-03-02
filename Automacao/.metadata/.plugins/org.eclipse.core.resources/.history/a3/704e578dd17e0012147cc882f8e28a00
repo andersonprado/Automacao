@@ -1,0 +1,66 @@
+package br.com.arduino;
+
+public class TesteProxy implements br.com.arduino.Teste {
+  private String _endpoint = null;
+  private br.com.arduino.Teste teste = null;
+  
+  public TesteProxy() {
+    _initTesteProxy();
+  }
+  
+  public TesteProxy(String endpoint) {
+    _endpoint = endpoint;
+    _initTesteProxy();
+  }
+  
+  private void _initTesteProxy() {
+    try {
+      teste = (new br.com.arduino.TesteServiceLocator()).getTestePort();
+      if (teste != null) {
+        if (_endpoint != null)
+          ((javax.xml.rpc.Stub)teste)._setProperty("javax.xml.rpc.service.endpoint.address", _endpoint);
+        else
+          _endpoint = (String)((javax.xml.rpc.Stub)teste)._getProperty("javax.xml.rpc.service.endpoint.address");
+      }
+      
+    }
+    catch (javax.xml.rpc.ServiceException serviceException) {}
+  }
+  
+  public String getEndpoint() {
+    return _endpoint;
+  }
+  
+  public void setEndpoint(String endpoint) {
+    _endpoint = endpoint;
+    if (teste != null)
+      ((javax.xml.rpc.Stub)teste)._setProperty("javax.xml.rpc.service.endpoint.address", _endpoint);
+    
+  }
+  
+  public br.com.arduino.Teste getTeste() {
+    if (teste == null)
+      _initTesteProxy();
+    return teste;
+  }
+  
+  public void exibe() throws java.rmi.RemoteException{
+    if (teste == null)
+      _initTesteProxy();
+    teste.exibe();
+  }
+  
+  public void limpa(org.apache.axis.types.URI arg0, br.com.arduino.UrlConnection arg1) throws java.rmi.RemoteException{
+    if (teste == null)
+      _initTesteProxy();
+    teste.limpa(arg0, arg1);
+  }
+  
+  public void nexibe() throws java.rmi.RemoteException{
+    if (teste == null)
+      _initTesteProxy();
+    teste.nexibe();
+  }
+  
+  
+}

@@ -1,0 +1,72 @@
+package br.com.arduino;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+
+@Stateless
+@Remote(TesteRemote.class)
+public class Teste implements TesteRemote {
+
+	public Teste() {
+
+	}
+
+	@Override
+	public void exibe() {
+		// JOptionPane.showMessageDialog(null, "dfas");
+		// System.out.println("OK");
+		// try {
+		// // URL url = new URL("http://192.168.0.117:80?3=liga");
+		// // URLConnection uRLConnection = url.openConnection();
+		// System.out.println("OK");
+		// } catch (IOException e) {
+		// e.printStackTrace();
+		// }
+		URL url;
+		try {
+			URL url = new URL("http://192.168.0.117:80?3=liga");
+
+			URLConnection con = url.openConnection();
+
+			BufferedReader in = new BufferedReader(new InputStreamReader(
+					con.getInputStream()));
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		try {
+			url = new URL("http://www3.mackenzie.com.br/tia/index2.php");
+
+			URLConnection uRLConnection = url.openConnection();
+			BufferedReader in = new BufferedReader(new InputStreamReader(
+					uRLConnection.getInputStream()));
+
+			String inputLine;
+			while ((inputLine = in.readLine()) != null)
+				System.out.println(inputLine);
+			in.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	@Override
+	public void nexibe() {
+		try {
+			URL url = new URL("http://192.168.0.117:80?3=desliga");
+			URLConnection uRLConnection = url.openConnection();
+			System.out.println("OK");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

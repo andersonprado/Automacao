@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="automacao">
+        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
+        <property name="java-output-path" value="/automacao/build/classes"/>
+        <property name="ClientProject" value="automacaoClient"/>
+        <property name="ClientJARURI" value="automacaoClient.jar"/>
+    </wb-module>
+</project-modules>

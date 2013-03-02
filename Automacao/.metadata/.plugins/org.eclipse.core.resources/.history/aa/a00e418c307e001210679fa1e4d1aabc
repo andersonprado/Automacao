@@ -1,0 +1,23 @@
+	<h:form id="formLogin" style="text-align: center;">
+				<p:panel header="Login ">
+					<div align="center"><br /><br /><br />
+						<h:panelGrid columns="2">
+
+							<h:outputLabel value="Usuario " />
+							<h:inputText id="usuario" value="#{logarMB.login.user}" />
+
+							<h:outputLabel value="Senha " />
+							<h:inputText id="senha" value="#{logarMB.login.senha}" />
+
+
+							<h:commandButton action="#{logarMB.verifica}" value="Logar" />
+
+						</h:panelGrid>
+						<br /> <br /> <br /> <br />
+					</div>
+
+
+
+
+				</p:panel>
+			</h:form>

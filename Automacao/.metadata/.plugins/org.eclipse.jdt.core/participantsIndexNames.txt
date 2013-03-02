@@ -1,0 +1,11 @@
+INDEX VERSION 1.126
+E:\Automacao\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\425587378.index
+\clienteWebSample\src
+E:\Automacao\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\55030727.index
+\clienteSample\src
+E:\Automacao\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\650241742.index
+\Teste\src
+E:\Automacao\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3486692712.index
+\clienteWebSample\src
+E:\Automacao\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1211561042.index
+\clienteSample\src

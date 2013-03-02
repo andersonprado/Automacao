@@ -1,0 +1,21 @@
+package br.com.arduino;
+
+import javax.ejb.Stateless;
+import javax.ejb.TransactionManagement;
+import javax.ejb.TransactionManagementType;
+
+/**
+ * Session Bean implementation class Conexao
+ */
+@Stateless
+@TransactionManagement(TransactionManagementType.BEAN)
+public class Conexao implements ConexaoRemote {
+
+    /**
+     * Default constructor. 
+     */
+    public Conexao() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

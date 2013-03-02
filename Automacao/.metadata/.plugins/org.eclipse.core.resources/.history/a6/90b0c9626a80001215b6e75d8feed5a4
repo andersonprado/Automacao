@@ -1,0 +1,11 @@
+package br.com.arduino;
+
+import javax.ejb.Remote;
+
+
+public interface ConexaoRemote {
+	void habilita();
+
+	void desabilita();
+
+}

@@ -1,0 +1,7 @@
+package br.com.managedBean;
+
+@ManagedBean
+@RequestScoped
+public class Teste {
+
+}

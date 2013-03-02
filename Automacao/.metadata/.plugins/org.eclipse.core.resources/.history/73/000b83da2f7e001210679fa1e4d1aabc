@@ -1,0 +1,9 @@
+package br.com.teste;
+
+import javax.faces.bean.RequestScoped;
+
+@ManagedBean
+@RequestScoped
+public class TesteMB {
+
+}

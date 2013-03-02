@@ -1,0 +1,13 @@
+package br.com.teste;
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+import br.com.arduino.TesteRemote;
+
+@ManagedBean
+@RequestScoped
+public class TesteMB {
+	@EJB
+	private TesteRemote teste;
+}

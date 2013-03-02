@@ -1,0 +1,15 @@
+package br.com.arduino;
+
+import java.rmi.RemoteException;
+
+import javax.xml.rpc.ServiceException;
+
+public class TesteCliente {
+	public static void main(String[] args) throws ServiceException, RemoteException {
+		TesteServiceLocator service = new TesteServiceLocator();
+		Teste proxy = service.getTestePort();
+		
+		proxy.exibe();
+
+	}
+}

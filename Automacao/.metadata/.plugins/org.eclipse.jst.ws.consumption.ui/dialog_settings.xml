@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.jst.ws.client.type.java">
+		<item value="http://192.168.0.100:8080/ConexaoService/Conexao?WSDL"/>
+		<item value="http://192.168.0.100:8080/TesteService/Teste?WSDL"/>
+	</list>
+	<list key="org.eclipse.jst.ws.internal.consumption.ui.widgets.test.ClientTestWidget.sampleFolderText_">
+		<item value="sampleTesteProxy"/>
+	</list>
+</section>

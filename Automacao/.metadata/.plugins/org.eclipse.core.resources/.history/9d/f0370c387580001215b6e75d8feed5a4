@@ -1,0 +1,16 @@
+package br.com.WebServiceClient;
+
+import br.com.arduino.ConexaoProxy;
+import br.com.arduino.ConexaoService;
+import br.com.arduino.ConexaoServiceLocator;
+
+public class TesteAcesso {
+
+	public static void main(String[] args) {
+
+		ConexaoServiceLocator service = new ConexaoServiceLocator();
+		Conexao proxy;
+
+	}
+
+}

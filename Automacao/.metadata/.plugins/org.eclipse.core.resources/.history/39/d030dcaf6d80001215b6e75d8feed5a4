@@ -1,0 +1,9 @@
+package br.com.arduino;
+
+public interface ConexaoRemote {
+
+	void habilita3();
+
+	void desabilita3();
+
+}

@@ -1,0 +1,86 @@
+package br.com.arduino;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.SocketTimeoutException;
+import java.net.URL;
+import java.net.URLConnection;
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+import javax.jws.WebService;
+
+@WebService()
+@Stateless
+@Remote(TesteRemote.class)
+public class Teste implements TesteRemote {
+
+	public Teste() {
+
+	}
+
+	@Override
+	public void exibe() {
+		// JOptionPane.showMessageDialog(null, "dfas");
+		// System.out.println("OK");
+		// try {
+		// // URL url = new URL("http://192.168.0.117:80?3=liga");
+		// // URLConnection uRLConnection = url.openConnection();
+		// System.out.println("OK");
+		// } catch (IOException e) {
+		// e.printStackTrace();
+		// }
+		URL url;
+		try {
+			url = new URL("http://192.168.0.250:80?4=liga");
+
+			URLConnection con = url.openConnection();
+
+			// Tempo de request na pagina 3 segundos
+			con.setReadTimeout(3000);
+
+			con.getInputStream();
+
+			limpa(url, con);
+
+		} catch (SocketTimeoutException ex) {
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	@Override
+	public void nexibe() {
+		URL url;
+		try {
+			url = new URL("http://192.168.0.250:80?4=desliga");
+
+			URLConnection con = url.openConnection();
+
+			// Tempo de request na pagina 3 segundos
+			con.setReadTimeout(3000);
+
+			con.getInputStream();
+
+			limpa(url, con);
+
+		} catch (SocketTimeoutException ex) {
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void limpa(URL url, URLConnection con) {
+		if (url != null)
+			url = null;
+
+		if (con != null)
+			con = null;
+
+	}
+
+}

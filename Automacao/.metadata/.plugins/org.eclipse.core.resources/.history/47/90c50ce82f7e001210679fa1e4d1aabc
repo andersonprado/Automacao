@@ -1,0 +1,12 @@
+package br.com.teste;
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+
+@ManagedBean
+@RequestScoped
+public class TesteMB {
+	@EJB
+	private TesteRemote teste;
+}

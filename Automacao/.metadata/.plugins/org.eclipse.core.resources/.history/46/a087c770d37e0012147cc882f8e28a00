@@ -1,0 +1,8 @@
+package br.com.arduino;
+
+public class TesteCliente {
+	public static void main(String[] args) {
+		TesteServiceLocator service = new TesteServiceLocator();
+
+	}
+}

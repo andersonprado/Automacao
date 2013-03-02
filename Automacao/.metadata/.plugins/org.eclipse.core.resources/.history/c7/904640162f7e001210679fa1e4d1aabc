@@ -1,0 +1,10 @@
+package br.com.arduino;
+
+import javax.ejb.Remote;
+
+@Remote
+public interface TesteRemote {
+	void exibe(){
+	
+}
+}

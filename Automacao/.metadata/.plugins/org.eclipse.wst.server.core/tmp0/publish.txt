@@ -1,0 +1,5 @@
+#GlassFish 3
+#Tue Feb 26 21:12:54 BRT 2013
+org.eclipse.jst.jee.server\:clienteSampleEAR=E\:\\Servidores Web\\glassfish3\\glassfish\\domains\\domain1\\eclipseApps\\clienteSampleEAR
+org.eclipse.jst.jee.server\:automacaoEAR=E\:\\Servidores Web\\glassfish3\\glassfish\\domains\\domain1\\eclipseApps\\automacaoEAR
+org.eclipse.jst.jee.server\:clienteWebSampleEAR=E\:\\Servidores Web\\glassfish3\\glassfish\\domains\\domain1\\eclipseApps\\clienteWebSampleEAR

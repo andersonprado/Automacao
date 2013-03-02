@@ -1,0 +1,12 @@
+package br.com.arduino;
+
+import javax.ejb.Stateless;
+import javax.ejb.TransactionManagement;
+import javax.ejb.TransactionManagementType;
+import javax.jws.WebService;
+
+@WebService
+@Stateless
+public class Conexao implements ConexaoRemote {
+
+}
