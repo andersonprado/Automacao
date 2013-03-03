@@ -3,6 +3,8 @@ acesso externo pagina Teste Servidor Web com JSF
 http://projeto2011.no-ip.org/ControleWeb/index.xhtml
 
 
+porta 8090 no servidor
+
 
 WebService
 
