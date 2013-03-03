@@ -22,7 +22,7 @@ public class ConexaoServiceLocator extends org.apache.axis.client.Service implem
     }
 
     // Use to get a proxy class for ConexaoPort
-    private java.lang.String ConexaoPort_address = "http://projeto2011.no-ip.org/ConexaoService/Conexao";
+    private java.lang.String ConexaoPort_address = "http://192.168.0.100:8090/ConexaoService/Conexao";
 
     public java.lang.String getConexaoPortAddress() {
         return ConexaoPort_address;

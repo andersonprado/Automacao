@@ -1320,3 +1320,53 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY org.eclipse.mylyn.tasks.ui 4 0 2013-03-02 01:55:45.484
 !MESSAGE Could not load repository template extension contributed by org.jboss.tools.common.mylyn with connectorKind jira
+!SESSION 2013-03-03 15:05:44.499 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_35
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2013-03-03 15:06:57.031
+!MESSAGE Could not load repository template extension contributed by org.jboss.tools.common.mylyn with connectorKind jira
+
+!ENTRY org.eclipse.wst.server.core 4 0 2013-03-03 15:42:01.189
+!MESSAGE Server GlassFish 3.1.2 at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2013-03-03 15:44:37.476
+!MESSAGE Server GlassFish 3.1.2 at localhost failed to start.
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2013-03-03 15:46:44.286
+!MESSAGE GlassFish: >>> C:\Program Files\Java\jdk1.6.0_35/bin/java
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2013-03-03 15:46:48.922
+!MESSAGE GlassFish: >>> Aguardando o domínio encerrar .
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2013-03-03 15:46:48.924
+!MESSAGE GlassFish: >>> Comando stop-domain executado com sucesso.
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-03-03 15:46:51.450
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.wst.server.core.internal.Server$PublishJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-03-03 15:46:51.451
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.wst.server.core.internal.Server$PublishJob
+!SESSION 2013-03-03 15:47:11.229 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_35
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2013-03-03 15:47:41.106
+!MESSAGE Could not load repository template extension contributed by org.jboss.tools.common.mylyn with connectorKind jira
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2013-03-03 15:59:05.878
+!MESSAGE GlassFish: >>> C:\Program Files\Java\jdk1.6.0_35/bin/java
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2013-03-03 15:59:10.151
+!MESSAGE GlassFish: >>> Aguardando o domínio encerrar ..
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2013-03-03 15:59:10.152
+!MESSAGE GlassFish: >>> Comando stop-domain executado com sucesso.
